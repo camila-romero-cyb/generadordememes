@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.header{
+ background-color: #191e2b;
+ color: white;
+ display: block;
+ font-size: "open sans";
+}
