@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de memes </title>
 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./stile.css">
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    
+   
 
    <header id="header" >
        <h1 class="primary-title"> Generador de memes</h1>
        <div class="buttons"> 
         <button class="button-nav"> imagen <i> </i> </button>
         <button class="button-nav"> texto <i> </i> </button>
-        <button class="button-nav"> modo oscuro <i> </i> </button> 
+        <button type="button button-nav" class="btn btn-dark" onclick="cambiarModo()">Modo Oscuro</button>
+
        </div>
    </header>
 
@@ -35,138 +39,148 @@
            </div>
        </section>
 
-       <aside class="filter-image">
-           <h2>IMAGEN</h2>
-           <div class="url">
-               <h3>URL</h3>
-                <input type="text">
-           </div>
+       <section class="prueba">
+        <aside class="filter-image">
+            <h2>IMAGEN</h2>
+            <div class="url">
+                <h3>URL</h3>
+                    <input type="text">
+            </div>
 
-           <div class="background">
-               <h3>FONDO</h3>
-               <button></button>
-               <button></button>
-           </div>
+            <div class="background">
+                <h3>FONDO</h3>
+                <button></button>
+                <button></button>
+            </div>
 
-           <div class="filters">
-               <h3>FILTROS</h3>
-               <div class="filter-option">
-                   <label> BRILLO
-                       <input>
-                   </label>
-               </div>
-
-               <div class="filter-option"> 
-                <label>OPACIDAD
-                    <input>
-                </label>
-               </div>
-
-               <div class="filter-option">
-                <label> CONTRASTE
-                    <input>
-                </label>
-               </div>
-
-               <div class="filter-option">
-                <label> DESENFOQUE
-                    <input>
-                </label>
-               </div>
-
-               <div class="filter-option">
-                <label> ESCALA DE GRISES
-                    <input>
-                </label>
-               </div>
-
-               <div class="filter-option">
-                <label> SEPIA
-                    <input>
-                </label>
-               </div>
-
-               <div class="filter-option">
-                <label> HUE
-                    <input>
-                </label>
-               </div>
-
-               <div class="filter-option">
-                <label> SATURADO
-                    <input>
-                </label>
-
+            <div class="filters">
+                <h3>FILTROS</h3>
                 <div class="filter-option">
-                    <label> NEGATIVO
+                    <label> BRILLO
                         <input>
                     </label>
                 </div>
-               </div>
 
-               <button>Restablecer Filtros</button>
-           </div>
-       </aside>
+                <div class="filter-option"> 
+                    <label>OPACIDAD
+                        <input>
+                    </label>
+                </div>
 
-       <aside class="filter-text">
-           <h2>TEXTO</h2>
-           <div>
-               <h3>Superior</h3>
-               <textarea>
-                  Texto Superior
-               </textarea>
-              
-           </div>
+                <div class="filter-option">
+                    <label> CONTRASTE
+                        <input>
+                    </label>
+                </div>
 
-           <div>
-            <h3>Inferior</h3>
-            <textarea>
-                Texto Superior
-            </textarea>
-         
-        </div>
+                <div class="filter-option">
+                    <label> DESENFOQUE
+                        <input>
+                    </label>
+                </div>
 
-           <div>
-               <h3>FUENTE</h3>
-               <button></button>
-               <button></button>
-               <button></button>
-               <button></button>
-               <button></button>
-           </div>
+                <div class="filter-option">
+                    <label> ESCALA DE GRISES
+                        <input>
+                    </label>
+                </div>
 
-           <div>
-               <h3>COLOR</h3>
-               <button></button>
-               <h3>FONDO</h3>
-               <button></button>
-               <input>
-           </div>
+                <div class="filter-option">
+                    <label> SEPIA
+                        <input>
+                    </label>
+                </div>
 
-           <div>
-               <h3>CONTORNO</h3>
-               <button>Ninguno</button>
-               <button>Claro</button>
-               <button>Oscuro</button>
-           </div>
+                <div class="filter-option">
+                    <label> HUE
+                        <input>
+                    </label>
+                </div>
 
-          
-           <div>
-               <h3>ESPACIADO</h3>
-           <input type="number">
-        </div>
+                <div class="filter-option">
+                    <label> SATURADO
+                        <input>
+                    </label>
 
-        <div>
-            <h3>INTERLINEADO</h3>
-            <input>
-        </div>
+                    <div class="filter-option">
+                        <label> NEGATIVO
+                            <input>
+                        </label>
+                    </div>
+                </div>
 
-       </aside>
+                <button>Restablecer Filtros</button>
+            </div>
+        </aside>
+
+        <aside class="filter-text">
+            <h2>TEXTO</h2>
+            <div>
+                <h3>Superior</h3>
+                <textarea>
+                    Texto Superior
+                </textarea>
+                
+            </div>
+
+            <div>
+                <h3>Inferior</h3>
+                <textarea>
+                    Texto Superior
+                </textarea>
+            
+            </div>
+
+            <div>
+                <h3>FUENTE</h3>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+
+            <div>
+                <h3>COLOR</h3>
+                <button></button>
+                <h3>FONDO</h3>
+                <button></button>
+                <input>
+            </div>
+
+            <div>
+                <h3>CONTORNO</h3>
+                <button>Ninguno</button>
+                <button>Claro</button>
+                <button>Oscuro</button>
+            </div>
+
+            
+            <div>
+                <h3>ESPACIADO</h3>
+            <input type="number">
+            </div>
+
+            <div>
+                <h3>INTERLINEADO</h3>
+                <input>
+            </div>
+
+        </aside>
+        </section>
    </main>
 
 
 
 
     <script src="./archivo.js"></script>
+
+    <script type="text/javascript"> 
+        function cambiarModo() { 
+          var cuerpoweb = document.body; 
+          cuerpoweb.classList.toggle("oscuro"); 
+        } 
+    </script>
+      
 </body>
 </html>
