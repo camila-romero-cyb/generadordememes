@@ -9,20 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./stile.css">
+
 </head>
 <body>
-    
    
-
    <header id="header" >
        <h1 class="primary-title"> Generador de memes</h1>
        <div class="buttons"> 
         <button class="button-nav"> imagen <i> </i> </button>
         <button class="button-nav"> texto <i> </i> </button>
-        <button type="button button-nav" class="btn btn-dark" onclick="cambiarModo()">Modo Oscuro</button>
-
+        <button class="button-nav" id="darkmode"> modo oscuro <i> </i> </button> 
+        <spam></spam>
+        <spam></spam>
        </div>
    </header>
 
@@ -39,7 +38,7 @@
            </div>
        </section>
 
-       <section class="prueba">
+      
         <aside class="filter-image">
             <h2>IMAGEN</h2>
             <div class="url">
@@ -57,7 +56,7 @@
                 <h3>FILTROS</h3>
                 <div class="filter-option">
                     <label> BRILLO
-                        <input>
+                        <input type ="range"></input>
                     </label>
                 </div>
 
@@ -167,20 +166,12 @@
             </div>
 
         </aside>
-        </section>
+       
    </main>
 
 
 
-
     <script src="./archivo.js"></script>
-
-    <script type="text/javascript"> 
-        function cambiarModo() { 
-          var cuerpoweb = document.body; 
-          cuerpoweb.classList.toggle("oscuro"); 
-        } 
-    </script>
       
 </body>
 </html>

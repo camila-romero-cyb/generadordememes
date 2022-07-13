@@ -56,6 +56,13 @@
     justify-content: space-between;
 }
 
+#dark{
+    background-color: blue;
+    color: white;
+    
+
+}
+
 .filter-image{
     background-color: #2502c8;
     color:white;
