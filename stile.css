@@ -3,9 +3,10 @@
     padding: 0;
     margin: 0;
     z-index: 0;
-    font-family: 'Montserrat', sans-serif;
-  
+    font-family: 'Montserrat', sans-serif; 
 }
+
+/*SECCION DE ENCABEZADO*/
 
 #header{
  background-color: #eed6ff;
@@ -15,14 +16,8 @@
  text-align: center;
 }
 
- 
-.oscuro{ 
-    background-color: #1f1f1f; 
-    color: #f1eded; 
-}
 
 .primary-title{
-   
     padding: 30px 0 20px 0;
     text-transform: uppercase;
 }
@@ -42,7 +37,8 @@
     font-size: 15px;
     padding:5px 10px;
     border: 3px solid #eed6ff;
-    border-radius: 30px;}
+    border-radius: 30px;
+}
 
 .button-nav:hover{
    color: #2502c8;
@@ -50,13 +46,31 @@
    background-color: #eed6ff;
    border-radius: 30px;
 }
-
-.dark{
-    background-color: #1f1f1f;
-    color:white
-
-}
  
+
+/*MODO OSCURO*/
+.dark{
+    background-color: #232424;
+    color:white
+} 
+
+
+/*SECCION PANEL DE IMAGEN*/
+
+.title-sections{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filter-image{
+    background-color: #2502c8;
+    color:white;
+    width: 280px;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: absolute; right: 0px; top: 0px; z-index: 1;
+}
+
 .background-list{
     display: flex;
 }
@@ -65,23 +79,63 @@
     order:1;
 }
 
-.filter-image{
-    background-color: #2502c8;
-    color:white;
-    width: 250px;
-    margin-bottom: 30px;
-    padding: 20px;
-    transition: height .4s;
+.url{
+    width: 100%;
+}
+
+.input-slider{
+    width: 100%;
+}
+
+h5{
+    margin: 10px 0 10px ;  
+}
+
+.filters-reset{
+    background-color:#2502c8;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:5px 10px;
+    border: 3px solid #eed6ff;
     
 }
+
+.filters-reset:hover{
+    color: #2502c8;
+    border: 3px solid #2502c8;
+    background-color: #eed6ff;
+}
+
+/*SECCION PANEL DE TEXTO*/
 
 .filter-text{
     background-color: #2502c8;
     color:white;
-    width: 250px;
+    width: 280px;
     padding: 20px;
-    transition: height .4s;
+    position: absolute; right: 0px; top: 0px; z-index: 1;
 }
+
 .filter-option{
     padding: 10px 0 10px;
+}
+
+.button-outline{
+    background-color:#2502c8;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:5px 5px;
+    border: 3px solid #eed6ff;
+}
+
+.button-outline:hover{
+    color: #2502c8;
+    border: 3px solid #2502c8;
+    background-color: #eed6ff;
+}
+
+.space{
+    width: 100%;
 }
