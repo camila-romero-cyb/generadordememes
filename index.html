@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de memes </title>
-
+    <link rel="stylesheet" href="./stile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stile.css">
-
 </head>
-<body>
+
+<body >
    
    <header id="header" >
        <h1 class="primary-title"> Generador de memes</h1>
        <div class="buttons"> 
-        <button class="button-nav"> imagen <i> </i> </button>
-        <button class="button-nav"> texto <i> </i> </button>
-        <button class="button-nav" id="darkmode"> modo oscuro <i> </i> </button> 
-        <spam></spam>
-        <spam></spam>
-       </div>
+            <button class="button-nav"> Imagen <i> </i> </button>
+            <button class="button-nav"> Texto <i> </i> </button>
+            <button id="modo" class="button-nav" > Modo Oscuro</button>
+        </div>
    </header>
 
    <main id="main">
@@ -48,64 +47,67 @@
 
             <div class="background">
                 <h3>FONDO</h3>
-                <button></button>
-                <button></button>
+                <input type="color" value="#ff0000">
+
+                <div class="row form-group">                        
+                    <label class="col-12 pl-0"></label>
+                    <select class="form-control col-12">
+                        <option value="ACTIVE">Ninguno</option>
+                        <option value="INACTIVE">Aclarar</option>
+                        <option value="ACTIVE">Oscurecer</option>
+                        <option value="INACTIVE">Diferencia</option>
+                        <option value="ACTIVE">Luminosidad</option>
+                        <option value="INACTIVE">Multiplicar</option>
+                    </select>                                
+                </div>           
             </div>
 
             <div class="filters">
                 <h3>FILTROS</h3>
                 <div class="filter-option">
-                    <label> BRILLO
-                        <input type ="range"></input>
-                    </label>
+                    <label for="brightness-slider"> BRILLO</label>
+                    <input type ="range" min="0" max="1" value="1" step="0.1"></input>
                 </div>
 
                 <div class="filter-option"> 
-                    <label>OPACIDAD
-                        <input>
-                    </label>
+                    <label for="opacity-slider">OPACIDAD</label>
+                    <input type ="range" min="0" max="1" value="1" step="0.1"></input>
                 </div>
 
                 <div class="filter-option">
-                    <label> CONTRASTE
-                        <input>
-                    </label>
+                    <label for="contrast-slider"> CONTRASTE</label>
+                    <input type ="range" min="100%" max="1000%" value="100%" step="1%"></input>
                 </div>
 
                 <div class="filter-option">
-                    <label> DESENFOQUE
-                        <input>
-                    </label>
+                    <label for="blur-slider"> DESENFOQUE</label>
+                    <input type ="range" min="0px" max="10px" value="0px" step="0.1px"></input>
                 </div>
 
                 <div class="filter-option">
-                    <label> ESCALA DE GRISES
-                        <input>
-                    </label>
+                    <label> ESCALA DE GRISES</label>
+                    <input type ="range" min="0" max="1" value="1" step="0.1"></input>
                 </div>
 
                 <div class="filter-option">
-                    <label> SEPIA
-                        <input>
-                    </label>
+                    <label> SEPIA </label>
+                    <input type ="range" min="0" max="1" value="1" step="0.1"></input>
                 </div>
 
                 <div class="filter-option">
-                    <label> HUE
-                        <input>
-                    </label>
+                    <label> HUE </label>
+                    <input type ="range" min="0" max="1" value="1" step="0.1"></input>
                 </div>
 
                 <div class="filter-option">
-                    <label> SATURADO
-                        <input>
-                    </label>
+                    <label> SATURADO </label>
+                    <input type ="range" min="0" max="1" value="1" step="0.1"></input>
 
                     <div class="filter-option">
-                        <label> NEGATIVO
-                            <input>
-                        </label>
+                        <label for="opacity-slider"> NEGATIVO </label>
+                        <input type ="range" min="0" max="1" value="1" step="0.1"></input>
                     </div>
+                   </div> 
                 </div>
 
                 <button>Restablecer Filtros</button>

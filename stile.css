@@ -27,6 +27,8 @@
     text-transform: uppercase;
 }
 
+
+
 .buttons{
     padding-bottom:20px;
 }
@@ -38,10 +40,7 @@
     font-size: 15px;
     padding:5px 10px;
     border: 3px solid #eed6ff;
-    border-radius: 30px;
-
-   
-}
+    border-radius: 30px;}
 
 .button-nav:hover{
    color: #2502c8;
@@ -50,17 +49,18 @@
    border-radius: 30px;
 }
 
-.prueba{
+.dark{
+    background-color: #1f1f1f;
+    color:white
+
+}
+ 
+.background-list{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-#dark{
-    background-color: blue;
-    color: white;
-    
-
+.item-list{
+    order:1;
 }
 
 .filter-image{
@@ -69,6 +69,7 @@
     width: 250px;
     margin-bottom: 30px;
     padding: 20px;
+    transition: height .4s;
     
 }
 
@@ -77,6 +78,7 @@
     color:white;
     width: 250px;
     padding: 20px;
+    transition: height .4s;
 }
 .filter-option{
     padding: 10px 0 10px;
