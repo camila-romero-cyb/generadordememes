@@ -18,8 +18,16 @@
    <header id="header" >
        <h1 class="primary-title"> Generador de memes</h1>
        <div class="buttons"> 
-            <button class="button-nav"> Imagen <i> </i> </button>
-            <button class="button-nav"> Texto <i> </i> </button>
+        
+
+        <a class="button-nav" style='cursor: pointer;' onclick="mostrarOcultar('section-image')">
+            Imagen
+        </a>
+
+        <a class="button-nav" style='cursor: pointer;' onclick="mostrarOcultar('section-text')">
+            Texto
+        </a>
+
             <button id="modo" class="button-nav" > Modo Oscuro</button>
         </div>
    </header>
@@ -38,7 +46,7 @@
        </section>
 
       
-        <aside class="filter-image">
+        <aside id="section-image" class="filter-image">
             <h2>IMAGEN</h2>
             <div class="url">
                 <h3>URL</h3>
@@ -114,7 +122,7 @@
             </div>
         </aside>
 
-        <aside class="filter-text">
+        <aside id="section-text" class="filter-text">
             <h2>TEXTO</h2>
             <div>
                 <h3>Superior</h3>
