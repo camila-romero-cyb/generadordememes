@@ -5,29 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de memes </title>
-    <link rel="stylesheet" href="./stile.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stile.css">
+
 </head>
-<body>
-    
-</head>
-<body class="dark">
+
+<body >
    
    <header id="header" >
-       <h1 class="primary-title"> Generador de memes</h1>
+       <h1 class="primary-title">Generador de memes</h1>
        <div class="buttons"> 
-        <button class="button-nav"> imagen <i> </i> </button>
-        <button class="button-nav"> texto <i> </i> </button>
-        <div id="modo">
-        <button class="button-nav" > Modo Oscuro</button>
+        
+
+        <a class="button-nav" style='cursor: pointer;' onclick="mostrarOcultar('section-image')">Imagen</a>
+
+        <a class="button-nav" style='cursor: pointer;' onclick="mostrarOcultar('section-text')">Texto</a>
+
+            <button id="modo" class="button-nav"> Modo Oscuro</button>
         </div>
-
-
-       </div>
    </header>
 
    <main id="main">
@@ -43,144 +39,176 @@
            </div>
        </section>
 
-       <div>
-       <section class="prueba">
-        <aside class="filter-image">
-            <h2>IMAGEN</h2>
+
+     
+        <aside id="section-image" class="filter-image">
+            <h2 class="title-sections">IMAGEN</h2>
             <div class="url">
-                <h3>URL</h3>
-                    <input type="text">
+                <h5>URL</h5>
+                    <input class="url" type="text">
             </div>
-
-            <div class="background">
-                <h3>FONDO</h3>
-                <button></button>
-                <button></button>
-            </div>
-
-            <div class="filters">
-                <h3>FILTROS</h3>
-                <div class="filter-option">
-                    <label> BRILLO
-                        <input>
-                    </label>
-                </div>
-
-                <div class="filter-option"> 
-                    <label>OPACIDAD
-                        <input>
-                    </label>
-                </div>
-
-                <div class="filter-option">
-                    <label> CONTRASTE
-                        <input>
-                    </label>
-                </div>
-
-                <div class="filter-option">
-                    <label> DESENFOQUE
-                        <input>
-                    </label>
-                </div>
-
-                <div class="filter-option">
-                    <label> ESCALA DE GRISES
-                        <input>
-                    </label>
-                </div>
-
-                <div class="filter-option">
-                    <label> SEPIA
-                        <input>
-                    </label>
-                </div>
-
-                <div class="filter-option">
-                    <label> HUE
-                        <input>
-                    </label>
-                </div>
-
-                <div class="filter-option">
-                    <label> SATURADO
-                        <input>
-                    </label>
-
-                    <div class="filter-option">
-                        <label> NEGATIVO
-                            <input>
-                        </label>
+            <div class="section-background">
+                    <div class="background">
+                        <h4>FONDO</h4>
+                        <input type="color" value="#e693ff">
                     </div>
-                   </div> 
-                </div>
+                        <div class="row form-group desplegable">                        
+                            <label class="col-12 pl-0"></label>
+                            <select class="form-control col-12">
+                                <option value="ACTIVE">Ninguno</option>
+                                <option value="INACTIVE">Aclarar</option>
+                                <option value="ACTIVE">Oscurecer</option>
+                                <option value="INACTIVE">Diferencia</option>
+                                <option value="ACTIVE">Luminosidad</option>
+                                <option value="INACTIVE">Multiplicar</option>
+                            </select>                                
+                        </div>           
+            </div>    
+            
+                    <div class="filters">
+                        <h5>FILTROS</h5>
+                        <div class="filter-option">
+                            <label for="brightness-slider"> BRILLO</label>
+                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                        </div>
 
-                <button>Restablecer Filtros</button>
+                        <div class="filter-option"> 
+                            <label  for="opacity-slider">OPACIDAD</label>
+                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                        </div>
+
+                        <div class="filter-option">
+                            <label for="contrast-slider"> CONTRASTE</label>
+                            <input class="input-slider" type ="range" min="100%" max="1000%" value="100%" step="1%"></input>
+                        </div>
+
+                        <div class="filter-option">
+                            <label for="blur-slider"> DESENFOQUE</label>
+                            <input class="input-slider" type ="range" min="0px" max="10px" value="0px" step="0.1px"></input>
+                        </div>
+
+                        <div class="filter-option">
+                            <label> ESCALA DE GRISES</label>
+                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                        </div>
+
+                        <div class="filter-option">
+                            <label> SEPIA </label>
+                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                        </div>
+
+                        <div class="filter-option">
+                            <label> HUE </label>
+                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                        </div>
+
+                        <div class="filter-option">
+                            <label> SATURADO </label>
+                            <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+
+                            <div class="filter-option">
+                                <label for="opacity-slider"> NEGATIVO </label>
+                                <input class="input-slider" type ="range" min="0" max="1" value="1" step="0.1"></input>
+                            </div>
+                        </div> 
+                        </div>
+           
+                <button class="filters-reset"> Restablecer Filtros</button>
             </div>
         </aside>
 
-        <aside class="filter-text">
-            <h2>TEXTO</h2>
-            <div>
-                <h3>Superior</h3>
-                <textarea>
-                    Texto Superior
-                </textarea>
-                
-            </div>
-
-            <div>
-                <h3>Inferior</h3>
-                <textarea>
-                    Texto Superior
-                </textarea>
+        <div class="box-meme">
+            <p id="renderText" class="text-meme"> TOP TEXT</p>
             
+       <div>
+       
+       </div>
+       <p id="renderText" class="text-meme"> BOTTOM TEXT </p>
+      
+
+       </div>
+      
+
+        <aside id="section-text" class="filter-text">
+            <h2 class="title-sections">TEXTO</h2>
+            <div>
+                <h5> SUPERIOR</h5>
+                <input id="inputText" type="text">
+                <p id="renderText"></p>
             </div>
 
             <div>
-                <h3>FUENTE</h3>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <h5>INFERIOR</h5>
+               <input id="inputText" type="text">
+               <p id="renderText"></p>
             </div>
 
             <div>
-                <h3>COLOR</h3>
-                <button></button>
-                <h3>FONDO</h3>
-                <button></button>
-                <input>
+                <h5>FUENTE</h5>
+                <div class="row form-group">                        
+                    <label class="col-12 pl-0"></label>
+                    <select class="form-control col-12">
+                        <option value="ACTIVE">Arial</option>
+                        <option value="INACTIVE">Arial Black</option>
+                        <option value="ACTIVE">American Typewriter</option>
+                        <option value="INACTIVE">Andale Mono</option>
+                        <option value="ACTIVE">Comic Sans MS</option>
+                        <option value="INACTIVE">Helvetica</option>
+                        <option value="INACTIVE">Impact</option>
+                        <option value="ACTIVE">Verdana</option>
+                        <option value="INACTIVE">Times New Roman</option>
+                    </select>                                
+                </div>  
             </div>
 
+            <div class="color-text">
+                <div class="incolor">
+                <h5 classe="tittle-items">COLOR</h5>
+                <div class="btn-color">
+                <input type="color" id="incolor" value="#000000" aria-label="color de texto">
+                <span id="texto-color"> #000000</span>
+            </div>
+          
+                <h5>FONDO</h5>
+                <input type="color" value="#FFFFFF">
+                <input type="checkbox">Fondo Transparente</input>
+            
+
             <div>
-                <h3>CONTORNO</h3>
-                <button>Ninguno</button>
-                <button>Claro</button>
-                <button>Oscuro</button>
+                <h5>CONTORNO</h5>
+                <button class="button-outline">Ninguno</button>
+                <button class="button-outline">Claro</button>
+                <button class="button-outline">Oscuro</button>
             </div>
 
             
             <div>
-                <h3>ESPACIADO</h3>
-            <input type="number">
+                <h5>ESPACIADO</h5>
+            <input class="space" type="number" value="35">
             </div>
 
             <div>
-                <h3>INTERLINEADO</h3>
-                <input>
+                <h5>INTERLINEADO</h5>
+                <div class="row form-group">                        
+                    <label  class="col-12 pl-0 "></label>
+                    <select class="form-control col-12 space">
+                        <option value="ACTIVE">0.8</option>
+                        <option value="INACTIVE">1</option>
+                        <option value="ACTIVE">1.2</option>
+                        <option value="INACTIVE">1.5</option>
+                        <option value="ACTIVE">2</option>
+                        <option value="INACTIVE">2.5</option>
+                    </select>                                
+                </div>  
             </div>
 
         </aside>
-        </section>
+       
    </main>
 
 
 
-
     <script src="./archivo.js"></script>
-
-  
+      
 </body>
 </html>

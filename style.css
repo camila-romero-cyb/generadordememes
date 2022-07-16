@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/**SECCION DE ENCABEZADO**/
+
+#header{
+ background-color: #eed6ff;
+ color:  #2502c8;
+ display: block;
+ border: 6px solid #2502c8 ;
+ text-align: center;
+}
+
+
+.primary-title{
+    padding: 30px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.section-image .section-text { 
+    display:none; 
+}
+
+.buttons{
+    padding-bottom:20px;
+}
+
+.button-nav{
+    background-color:#2502c8;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding:5px 10px;
+    border: 3px solid #eed6ff;
+    border-radius: 30px;
+}
+
+.button-nav:hover{
+   color: #2502c8;
+   border: 3px solid #2502c8;
+   background-color: #eed6ff;
+   border-radius: 30px;
+}
+ 
+
+/*/MODO OSCURO/*/
+.dark{
+    background-color: #232424;
+    color:white
+} 
+
+
+/** SECCION PANEL DE IMAGEN**/
+
+
+
+.title-sections{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filter-image{
+    background-color: #2502c8;
+    color:white;
+    width: 280px;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: absolute; right: 0px; top: 0px; z-index: 1;
+}
+
+.background-list{
+    display: flex;
+}
+
+.item-list{
+    order:1;
+}
+
+.url{
+    width: 100%;
+}
+
+.input-slider{
+    width: 100%;
+}
+
+h5{
+    margin: 10px 0 10px ;  
+}
+
+.filters-reset{
+    background-color:#2502c8;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:5px 10px;
+    border: 3px solid #eed6ff;
+    
+}
+
+.filters-reset:hover{
+    color: #2502c8;
+    border: 3px solid #2502c8;
+    background-color: #eed6ff;
+}
+
+/*SECCION PANEL DE TEXTO/*/
+
+.filter-text{
+    background-color: #2502c8;
+    color:white;
+    width: 280px;
+    padding: 20px;
+    position: absolute; right: 0px; top: 0px; z-index: 1;
+}
+
+.filter-option{
+    padding: 10px 0 10px;
+}
+
+.button-outline{
+    background-color:#2502c8;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:5px 5px;
+    border: 3px solid #eed6ff;
+}
+
+.button-outline:hover{
+    color: #2502c8;
+    border: 3px solid #2502c8;
+    background-color: #eed6ff;
+}
+
+.space{
+    width: 100%;
+}
+
+
+/* CANVAS MEME**/
+.box-meme{
+    width: 100%;
+    max-width: 610px;
+    height: 610px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+
+}
+
+.text-meme{
+        width: 100%;
+        background: white;
+        color: black;
+        text-align: center;
+        padding: 35px 50px;
+        font-size: 40px;
+        font-weight: 800;
+        font-family:'Montserrat', sans-serif;  
+ }
+
+#top-text{
+    top: 0%;
+}
+
+#botton-text{
+    bottom: 0%;
+
+}
+
+
+
+
+
